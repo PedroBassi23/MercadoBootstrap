@@ -1,0 +1,162 @@
+
+div.carousel-inner {
+  /* width: 100px;
+  height: 400px; */
+}
+
+.carousel-images {
+  object-fit: cover;
+  height: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+.card-img-top {
+  transition: 0.3s;
+}
+
+
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  transition: .4s;
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+  z-index: 5000;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+/***** Top menu *****/
+
+.navbar {
+  background: #444;
+  transition: all 0.6s;
+  backface-visibility: hidden;
+  box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
+}
+
+.navbar-dark .navbar-nav {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #444;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  background: none;
+  outline: 0;
+}
+
+.navbar-dark .navbar-toggler span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 6px auto;
+  background: #fff;
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.navbar-dark .navbar-toggler:hover span,
+.navbar-dark .navbar-toggler:focus span {
+  background: #ccc;
+}
+
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+  opacity: 0;
+}
+
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+  transform: none;
+  opacity: 1;
+}
+
+
+
+
+/*
+li.nav-item {
+  transform: 0.2s;
+}
+li.nav-item:hover {
+  width: 70%;
+  position: relative;
+  height: 100%;
+  font-size: 23px; 
+  border-radius: 10px;
+}
+*/
+
+
+
+.wa {
+  position: fixed;
+  right:0px; 
+  bottom: 5px; 
+  z-index: 10000;
+  width:150px;
+  height:150px;
+  transition: 0.5s;
+}
+.wa:hover {
+  position: fixed;
+  right:0px; 
+  bottom: 5px; 
+  z-index: 10000;
+  width:170px;
+  height:170px;
+}
+
+
+
+
+
+
+
+
+.btn .btn-outline-secondary:hover {
+  transform: scale(1.5);
+  transition: 0.5;
+}

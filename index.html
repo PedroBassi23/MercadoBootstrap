@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="./Imagens/LOGO.png" alt="" style="margin-left: 15px; width: 300px;">
+    </a>
+
+    <!-- <a class="navbar-brand" href="index.html"
+      style="margin: 10px; font: normal 30pt arial; color:rgba(251, 255, 0, 0.7);"> Mercado Auto Peças e Acessórios</a> -->
+
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" style="position:relative; right: 50px;">
+        <span class="navbar-toggler-icon"></span> 
+        <span class="navbar-toggler-icon"></span> 
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"  style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="index.html" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Início </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="#Multimídia" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Produtos </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px ;margin-left: 10px; height: 47px; margin-bottom: 10px;">
+          <a class="nav-link ml-3 my-1" href="#Pneus" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Pneus </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="#Óleos" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Óleos </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="#Baterias" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Baterias </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="#Extintor" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Serviços </a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
+            <a class="nav-link ml-3 my-1" href="https://api.whatsapp.com/send/?phone=551637024131" target="_blank" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 19px; border-radius: 10px;"> Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+   <!-- >nav class="nav nav-pills flex-column">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto"  style="font-size: 17px;">
+        <li class="nav-item active"  style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+          <a class="nav-link ml-3 my-1" href="index.html" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Início </a>
+        </li>
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+          <a class="nav-link ml-3 my-1" href="#Aromatizante" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Produtos </a>
+        </li>
+        
+        <li class="nav-item" style="margin-right: 5px;">
+          <a class="nav-link ml-3 my-1" href="#Engates" style="color: rgb(223, 223, 21);"> Engate </a>
+        </li>
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+        <a class="nav-link ml-3 my-1" href="#Pneus" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Pneus </a>
+        </li>
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+          <a class="nav-link ml-3 my-1" href="#Óleos" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Óleos </a>
+        </li>
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+          <a class="nav-link ml-3 my-1" href="#Baterias" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Baterias </a>
+        </li>
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;">
+          <a class="nav-link ml-3 my-1" href="#Serviços" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Serviços </a>
+        </li>
+          <a class="nav-link ml-3 my-1" href="#Multimídia" style="color: rgb(223, 223, 21);"> Multimídia </a>
+        </li>
+        <li class="nav-item" style="margin-right: 5px;">
+          <a class="nav-link ml-3 my-1" href="#Defletor" style="color: rgb(223, 223, 21);"> Defletor </a>
+        </li>
+        <li class="nav-item" style="margin-right: 5px;">
+          <a class="nav-link ml-3 my-1" href="#Limpador" style="color: rgb(223, 223, 21);"> Limpador </a>
+        </li>
+        
+        <li class="nav-item" style="margin-right: 10px; height: 47px; margin-bottom: 7px;"">
+          <a class="nav-link ml-3 my-1" href="https://api.whatsapp.com/send/?phone=551637024131" target="_blank" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black;"> Fale Conosco</a>
+        </li>
+         <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown06">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+  
+      <div class="container">
+        <form class="form-inline my-2 my-md-0" action="/pesquisar" method="GET">
+          <input class="form-control" type="text" name="q" placeholder="Pesquisar" width="100px" height="10px">
+          <button class="btn btn-primary" type="submit" style="position: relative; right: 35px; top: 32px;" >Enviar</button>
+        </form> 
+      -->
+      </div>
+    </div>
+   </nav>
+  </nav>
+  <div id="navbarToggleExternalContent" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" style="margin-top: 30px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Imagens/Mercado3.0.png" class="d-block w-100 carousel-images" alt="Logo da Mercado">
+      </div>
+      <div class="carousel-item">
+        <div class="video-background-holder carousel-images">
+          <div class="video-background-overlay"></div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" style="object-fit: cover; height: 900px;">
+                <source src="./Videos/VideoLoja.mp4" type="video/mp4">
+            </video>
+          <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
+                <h1 class="display-4" style="z-index: 100%;">Mercado Auto Peças e Acessórios</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/BMW.jpeg" class="d-block w-100 carousel-images" alt="Serviço de conserto de Carro">
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/serviços.jpeg" class="d-block w-100 carousel-images" alt="Insufilme">
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/serviços2.jpeg" class="d-block w-100 carousel-images" alt="Alinhamento e Balanceamento">
+      </div>
+      <div class="carousel-item">
+        <img src="./Imagens/PneusCapa.jpeg" class="d-block w-100 carousel-images" alt="Capas de Pneus">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#navbarToggleExternalContent" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#navbarToggleExternalContent" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section id="services" class="py-5" style="margin: 0px;">
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Instalação Profissional</h3>
+              <p class="card-text">Conte com nossa equipe especializada para a instalação precisa e segura dos acessórios em seu veículo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Ampla Variedade de Produtos</h3>
+              <p class="card-text">Oferecemos uma ampla seleção de acessórios para carros, desde sistemas multimídia até itens de personalização.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Qualidade Garantida</h3>
+              <p class="card-text">Trabalhamos com marcas renomadas e produtos de alta qualidade para garantir a satisfação dos nossos clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="card-group" style="margin: 15px;">
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Aromatizante.jpeg" alt="Imagem do Aromatizante" id="Aromatizante" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title"> Aromatizante (R$00,00)</h3>
+        <p class="card-text">Renove o aroma do seu carro com nosso aromatizante exclusivo. Desenvolvido para proporcionar uma fragrância agradável e duradoura, o nosso aromatizante de carro oferece uma experiência refrescante em cada viagem. Com opções de fragrâncias sofisticadas e envolventes, transforme o interior do seu veículo em um ambiente aconchegante e convidativo. Aproveite a qualidade e o design elegante do nosso aromatizante de carro para desfrutar de uma atmosfera agradável e personalizada em todos os momentos.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Engate.jpeg" alt="Imagem de Engates" id="Engates" width="100%" style="object-fit: cover;"/> <!-- width="100px" height="500px" -->
+      <div class="card-body">
+        <h3 class="card-title">Engate (R$00,00)</h3>
+        <p class="card-text">Adquira agora o engate perfeito para o seu veículo! Nossa estrutura metálica resistente é projetada para garantir segurança e durabilidade. Com fácil instalação na parte traseira do seu carro, nosso engate permite que você reb oque cargas pesadas de forma prática e segura. A bola de engate se encaixa perfeitamente em reboques e outros objetos rebocáveis. Aproveite a funcionalidade e versatilidade do nosso engate para tornar suas viagens e transporte de carga mais eficientes.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Pneus.jpeg" alt="Imagens de Pneus" id="Pneus" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Pneus (R$00,00)</h3>
+        <p class="card-text">Melhore a performance do seu veículo com nossos pneus de alta qualidade. Compostos por borracha durável e reforços internos, oferecemos aderência excepcional e durabilidade. Nossos pneus são projetados para proporcionar uma condução suave, segura e confortável em diferentes condições de estrada. Escolha entre nossa variedade de tamanhos e padrões de banda de rodagem para atender às suas necessidades específicas. Invista em pneus confiáveis que garantem desempenho superior e segurança em todas as suas viagens.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+  </div>
+  <div class="card-group" style="margin: 15px;">
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/oleoamarelo.jpeg" alt="Imagem De Óleos" id="Óleos" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Óleo Tecno 15W-40 API-SN (R$00,00)</h3>
+        <p class="card-text">Eleve o desempenho do seu motor com o óleo Tecno 15W-40 API-SN. Desenvolvido para atender aos mais altos padrões de qualidade, proporciona proteção avançada contra o desgaste e a oxidação. Sua fórmula balanceada garante uma lubrificação eficiente em diversas condições de temperatura. Maximize a eficiência do seu veículo, reduza o consumo de combustível e prolongue a vida útil do motor com o óleo Tecno 15W-40 API-SN. Desfrute de uma condução suave e confiável em todas as suas jornadas.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/óleoverde.jpeg" alt="Imagem De Óleos" id="Óleos" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Óleo Top Turbo 15W-40 API-CI-4 (R$00,00)</h3>
+        <p class="card-text">Eleve a potência e a durabilidade do seu motor com o óleo Top Turbo 15W-40 API-CI-4. Formulado para atender aos requisitos de veículos a diesel, oferece proteção superior contra o desgaste e a formação de depósitos. Sua fórmula avançada garante uma lubrificação eficiente em condições extremas. Aumente o desempenho do seu veículo, reduza o consumo de óleo e prolongue a vida útil do motor com o óleo Top Turbo 15W-40 API-CI-4. Desfrute de uma condução potente e confiável em todas as suas aventuras.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/óleolaranja.jpeg" alt="Imagem De Óleos" id="Óleos" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Óleo Valora 5W-30 SN-Plus (R$00,00)</h3>
+        <p class="card-text">Eleve a performance e a proteção do seu motor com o óleo Valora 5W-30 SN-Plus. Formulado para atender às últimas especificações de qualidade, oferece excelente resistência ao desgaste e limpeza do motor. Sua viscosidade equilibrada proporciona uma lubrificação eficiente em diferentes condições de temperatura. Aumente a eficiência do seu veículo, reduza o consumo de combustível e prolongue a vida útil do motor com o óleo Valora 5W-30 SN-Plus. Desfrute de uma condução suave e confiável em todas as suas jornadas.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+  </div>
+  <div class="card-group" style="margin: 15px;">
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Bateria Cral.jpeg" alt="Baterias Cral" id="Baterias" width="100%"style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Baterias Cral (R$00,00)</h3>
+        <p class="card-text">Adquira as confiáveis Baterias Cral para o seu carro e garanta um desempenho excepcional. Com alta durabilidade, potência de partida e resistência a temperaturas extremas, essas baterias são a escolha perfeita para manter seu veículo sempre pronto para a estrada. Conte com a qualidade e confiança das Baterias Cral para sua tranquilidade.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Bateria Moura.jpeg" alt="Baterias Moura" id="Baterias" width="100%"style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Baterias Moura (R$00,00)</h3>
+        <p class="card-text">Maximize a performance do seu carro com as renomadas Baterias Moura. Desenvolvidas com tecnologia avançada, oferecem longa vida útil, excelente capacidade de partida e resistência a condições extremas. Escolha a confiabilidade das Baterias Moura e tenha total tranquilidade ao dirigir.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Bateria heliar.jpeg" alt="Baterias Heliar" id="Baterias" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Baterias Heliar (R$00,00)</h3>
+        <p class="card-text">Eleve o desempenho do seu veículo com as renomadas Baterias Heliar. Com tecnologia de ponta, longa vida útil e excelente capacidade de partida, essas baterias oferecem confiabilidade e resistência para enfrentar qualquer desafio. Escolha a qualidade e confiança das Baterias Heliar para garantir o melhor funcionamento do seu carro.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+  </div>
+  <div class="card-group" style="margin: 15px;">
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Multimídia.jpeg" alt="Multimídia para carro" id="Multimídia" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Multimídia (R$00,00)</h3>
+        <p class="card-text">Venda incrível sistema multimídia para carros, aprimore sua experiência automotiva com tela touchscreen, conectividade Bluetooth e recursos avançados de áudio. Desfrute de entretenimento e facilidades de conectividade em seu veículo com esta solução completa.</p>
+        <a href="seu_link_aqui" class="btn btn-primary" style="position: relative; left: 0px;">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Defletor.jpeg" alt="Defletor" id="Defletor" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Defletor (R$00,00)</h3>
+        <p class="card-text">Aumente o conforto e reduza o ruído do vento ao dirigir com o Defletor de Carro. Este acessório aerodinâmico é fácil de instalar e ajuda a desviar o fluxo de ar, evitando turbulências dentro do veículo. Desfrute de uma viagem mais tranquila e agradável com o Defletor de Carro.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/limpador.jpeg" alt="Limpador de Para-Brisa" id="Limpador" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Limpador de Para-Brisa (R$00,00)</h3>
+        <p class="card-text">Mantenha sua visibilidade clara e segura com o Limpador de Para-Brisa de Carro. Com lâminas de alta qualidade e eficiência de limpeza, este acessório garante uma remoção eficaz de sujeiras, chuva e detritos do para-brisa. Tenha uma condução mais segura e sem obstruções com o Limpador de Para-Brisa de Carro.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+  </div>
+  <div class="card-group" style="margin: 15px;">
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Retrovisor.jpeg" alt="Retrovisor para carro" id="Retrovisor" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Retrovisor (R$00,00)</h3>
+        <p class="card-text">Melhore sua visibilidade e segurança com o Retrovisor de Carro. Com design moderno e ajustável, oferece ampla cobertura de visão traseira para evitar pontos cegos. Tenha controle total do tráfego ao dirigir com o Retrovisor de Carro de alta qualidade.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Extintor.jpeg" alt="Extintor" id="Extintor" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Extintor (R$00,00)</h3>
+        <p class="card-text">Garanta a segurança do seu veículo com o Extintor de Carro. Compacto, fácil de usar e eficiente na prevenção e combate a incêndios. Esteja preparado para qualquer situação com o Extintor de Carro, indispensável para sua segurança e tranquilidade.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+    <div class="card" style="margin: 15px; border: 1px solid black;">
+      <img class="card-img-top" src="./Imagens/Para-brisa.jpeg" alt="Para-Brisa" id="Para-brisa" width="100%" style="object-fit: cover;">
+      <div class="card-body">
+        <h3 class="card-title">Para-Brisa (R$00,00)</h3>
+        <p class="card-text">Maximize a visibilidade e proteção com o Para-brisa de Carro. Feito com materiais de alta qualidade e resistência, oferece clareza óptica e durabilidade excepcionais. Desfrute de uma condução segura e sem obstruções com o Para-brisa de Carro de alta performance.</p>
+        <a href="seu_link_aqui" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Atualizado agora</small>
+      </div>
+    </div>
+  </div>
+  
+  <div style="background-color: #c7c7c7; margin: 30px; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <h1 style="text-align: center; color: #333;">Conheça um pouco mais sobre a loja</h1>
+    <div style="margin: 30px;">
+      <h3 style="text-indent: 30px; color: #333; font-size: 20px; line-height: 1.4;">
+        Bem-vindo à <strong style="color: #f7931e;">Mercado Auto Peças e Acessórios</strong>. Aqui você encontra tudo o que precisa para o seu carro.
+        A honestidade e transparência são nossos princípios fundamentais.</h3>
+      <h5 style="text-indent: 30px; color: #666; font-size: 16px; line-height: 1.4;">Estamos aqui para ajudar você a encontrar as melhores soluções para o seu veículo, oferecendo orientação especializada e recomendações personalizadas.
+        Nossa equipe dedicada está pronta para compartilhar seu conhecimento e garantir que você faça escolhas informadas. Trabalhamos com marcas confiáveis e fornecemos produtos de qualidade, visando a durabilidade e desempenho.
+        Priorizamos a satisfação do cliente, oferecendo preços justos e um atendimento excepcional. Venha nos visitar e descubra a diferença de uma experiência baseada na honestidade e no compromisso de ajudar você a encontrar as melhores soluções para o seu carro.</h5>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-md-2 py-5 my-5 border-top" style="margin-right: 20px;">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <p class="text-muted">&copy; 2023</p>
+        <div class="btn-group" style="position: relative; margin-top: 40px;">
+          <h5>Marcas Parceiras</h5>
+        </div>
+        <br>
+        <div class="btn-group" style="position: relative; margin-top: 20px;">
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <a href="https://www.centauro.com.br/" target="_blank"><img src="./Parceiros/Centauro.jpg" alt="Centauro logo" width="125" height="70"></a>
+            <span class="visually-hidden">Button</span>
+          </button>
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <a href="https://www.ponteirasrodrigues.com.br/" target="_blank"><img src="./Parceiros/PonteirasRodrigues.png" alt="Ponteiras Rodrigues logo" width="125" height="70" style="object-fit: cover;"></a>
+            <span class="visually-hidden">Button</span>
+          </button>
+        </div>
+        <br>
+        <div class="btn-group" style="position: relative; margin-top: 20px;">
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <img src="./Parceiros/De Tudo Um Pouco.png" alt="De Tudo Um Pouco logo" width="125" height="70">
+            <span class="visually-hidden">Button</span>
+          </button>
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <img src="./Parceiros/Dts.webp" alt="Dts logo" width="125" height="70" style="object-fit: cover;">
+            <span class="visually-hidden">Button</span>
+          </button>
+        </div>
+        <br>
+        <div class="btn-group" style="position: relative; margin-top: 20px;">
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <a href="https://www.construtorafuste.com.br/" target="_blank"><img src="./Parceiros/Fuste.png" alt="Fuste logo" width="125" height="70" style="object-fit: cover;"></a>
+            <span class="visually-hidden">Button</span>
+          </button>
+          <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
+            <a href="https://phoenixacademia.com.br/#cronograma" target="_blank"><img src="./Parceiros/phoenix.webp" alt="Phoenix logo" width="125" height="70" style="object-fit: cover;"></a>
+            <span class="visually-hidden">Button</span>
+          </button>
+        </div>
+      </div>
+    
+      <div class="col mb-3">
+      </div>
+    
+      <div class="col mb-3">
+        <h5>Início</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Início</a></li>
+          <li class="nav-item mb-2"><a href="https://api.whatsapp.com/send/?phone=551637024131" target="_blank" class="nav-link p-0 text-muted">Contato</a></li>
+        </ul>
+      </div>
+    
+      <div class="col mb-3">
+        <h5>Dias e Horários</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Segunda-Feira - 08:00 às 17:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Terça-feira - 08:00 às 17:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Quarta-feira - 08:00 às 17:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Quinta-feira - 08:00 às 17:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Sexta-feira - 08:00 às 17:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Sábado - 08:00 às 12:00</li>
+          <li class="nav-item mb-2" style="width: 300px; text-align: justify;">Domingo - Fechado</li>
+        </ul>
+      </div>
+    
+      <div class="col mb-3">
+        <h5>Informações</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">Endereço:</li>
+          <li class="nav-item mb-2">
+            <a href="https://www.google.com.br/maps/place/Mercado+Auto+Pe%C3%A7as+e+Acess%C3%B3rios/@-20.5507263,-47.4113478,13z/data=!4m10!1m2!2m1!1smercado+auto+pecas+e+acessorios!3m6!1s0x94b0a7fdc90f1635:0xdfcaacebb1ab0e4!8m2!3d-20.5284692!4d-47.4118372!15sCh9tZXJjYWRvIGF1dG8gcGVjYXMgZSBhY2Vzc29yaW9zWiEiH21lcmNhZG8gYXV0byBwZWNhcyBlIGFjZXNzb3Jpb3OSARVjYXJfYWNjZXNzb3JpZXNfc3RvcmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkNYMXAyUVVGM0VBReABAA!16s%2Fg%2F11np3q9glq"
+              target="_blank" class="nav-link p-0 text-muted">Praça Primeiro de Maio 02V - Vila Chico Julio, Franca -
+              SP, 14405-262</a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59774.613463224276!2d-47.4113478!3d-20.5507263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a7fdc90f1635%3A0xdfcaacebb1ab0e4!2sMercado%20Auto%20Pe%C3%A7as%20e%20Acess%C3%B3rios!5e0!3m2!1spt-BR!2sbr!4v1684974810282!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li>
+          <li class="nav-item mb-2">Telefone:</li>
+          <li class="nav-item mb-2">(16) 3702-4131</li>
+          <li class="nav-item mb-2">E-mail:</li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted" style="width: 100%;">mercado.apecas.acessórios.franca@gmail.com</a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <a href="https://api.whatsapp.com/send/?phone=551637024131" target="_blank"><img src="./Imagens/WhatsApp.webp" alt="wpp" class="wa"></a> <!-- z-index para deixar por cima das coisas, "ordem de importancia"-->
+  <section id="cta" class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Encontre os melhores acessórios para o seu carro agora!</h2>
+          <p>Tenha uma experiência única ao personalizar o seu veículo com nossos acessórios de qualidade. Visite nossa loja online ou entre em contato para mais informações.</p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=551637024131" class="btn btn-primary btn-lg" target="_blank">Solicitar Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>
