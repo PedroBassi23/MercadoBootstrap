@@ -6,19 +6,18 @@
           "pneus",
           "óleos",
           "baterias",
-          "multimídia",
-          "faról",
-          "lanterna",
+          "multimídias",
+          "faróis",
+          "lanternas",
           "paletas",
-          "defletor",
-          "para-brisa",
-          "engate",
-          "aromatizante",
-          "retrovisor",
-          "limpador",
+          "defletores",
+          "para-brisas",
+          "engates",
+          "aromatizantes",
+          "retrovisores",
           "lona marítma",
           "alinhamento",
-          "para-choque"
+          "para-choques"
         ];
     
         const suggestionsList = document.getElementById("suggestionsList");
@@ -171,29 +170,4 @@
     
     
       // Função para atualizar o valor da variável windowWidth
-  function updateWindowWidth() {
-    windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    // Verificar se a largura é menor que 390 pixels e atualizar a posição do botão
-    const navbarToggler = document.getElementById('navbarToggler');
-    if (windowWidth < 390) {
-      navbarToggler.style.position = 'absolute';
-      navbarToggler.style.top = '50%';
-      navbarToggler.style.left = '50%';
-      navbarToggler.style.transform = 'translate(-50%, -50%)';
-    } else {
-      navbarToggler.style.position = 'relative';
-      navbarToggler.style.top = '';
-      navbarToggler.style.left = '';
-      navbarToggler.style.transform = '';
-    }
-  }
-
-  // Atualizar o valor inicial
-  let windowWidth = 0;
-  updateWindowWidth();
-
-  // Ouvir o evento de redimensionamento da janela
-  window.addEventListener('resize', updateWindowWidth);
-    
-    
+ 

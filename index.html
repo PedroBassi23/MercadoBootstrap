@@ -14,8 +14,9 @@
 
 <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html">
-    <img src="./Imagens/LOGO.png" alt="" style="margin-left: 10px; width: 300px;">
+    <img src="./Imagens/LOGO.png" alt="" class="logo" style="margin-left: 10px;">
   </a>
+  
   <button id="navbarToggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" style="position:relative; right: 15px;">
     <span class="navbar-toggler-icon"></span> 
     <span class="navbar-toggler-icon"></span> 
@@ -27,7 +28,7 @@
         <a class="nav-link ml-3 my-1" href="" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 15px; border-radius: 10px;"> Início </a>
       </li>
       <li class="nav-item" style="margin-right: 7px; margin-left: 10px; height: 47px; margin-bottom: 10px;">
-        <a class="nav-link ml-3 my-1" href="#multimídia" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 15px; border-radius: 10px;"> Produtos </a>
+        <a class="nav-link ml-3 my-1" href="#multimídia" style="color: rgb(223, 223, 21);object-fit:s ;  border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 15px; border-radius: 10px;"> Produtos </a>
       </li>
       <li class="nav-item" style="margin-right: 7px ;margin-left: 10px; height: 47px; margin-bottom: 10px;">
         <a class="nav-link ml-3 my-1" href="#pneus" style="color: rgb(223, 223, 21); border: 1px solid black; padding: 8px; box-shadow: 1px 1px 1px black; font-size: 15px; border-radius: 10px;"> Pneus </a>
@@ -43,9 +44,10 @@
       </li>
       <div class="services-card" id="servicesCard" onmouseenter="showServices()" onmouseleave="hideServices()">
         <ul>
-          <li><a href="#">Serviço 1</a></li>
-          <li><a href="#">Serviço 2</a></li>
-          <li><a href="#">Serviço 3</a></li>
+          <li><a href="#">Alinhamento e Balanceamento</a></li>
+          <li><a href="#">Insufilme</a></li>
+          <li><a href="#">Troca de óleo</a></li>
+          <li><a href="#">Troca de Pneus</a></li>
           <!-- Adicione mais itens de serviço conforme necessário -->
         </ul>
       </div>
@@ -76,7 +78,7 @@
   <div id="navbarToggleExternalContent" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" style="margin-top: 30px;">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./Imagens/Mercado4.0.png" class="d-block w-100 carousel-images" alt="Logo da Mercado">
+        <img src="./Imagens/Mercado4.0.png" class="d-block w-100 carousel-images logocarrousel" alt="Logo da Mercado">
       </div>
       <div class="carousel-item" data-bs-interval="10000">
         <div class="video-background-holder carousel-images">
@@ -154,7 +156,7 @@
   
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Aromatizante.jpeg" alt="Imagem do Aromatizante" id="aromatizante" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Aromatizante.jpeg" alt="Imagem do Aromatizante" id="aromatizantes" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title"> Aromatizante (R$00,00)</h3>
         <p class="card-text">Renove o aroma do seu carro com nosso aromatizante exclusivo. Desenvolvido para proporcionar uma fragrância agradável e duradoura, o nosso aromatizante de carro oferece uma experiência refrescante em cada viagem. Com opções de fragrâncias sofisticadas e envolventes, transforme o interior do seu veículo em um ambiente aconchegante e convidativo. Aproveite a qualidade e o design elegante do nosso aromatizante de carro para desfrutar de uma atmosfera agradável e personalizada em todos os momentos.</p>
@@ -224,7 +226,7 @@
   </div>
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Bateria Cral.jpeg" alt="Baterias Cral" id="Bateria" width="100%"style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Bateria Cral.jpeg" alt="Baterias Cral" id="baterias" width="100%"style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Baterias Cral (R$00,00)</h3>
         <p class="card-text">Adquira as confiáveis Baterias Cral para o seu carro e garanta um desempenho excepcional. Com alta durabilidade, potência de partida e resistência a temperaturas extremas, essas baterias são a escolha perfeita para manter seu veículo sempre pronto para a estrada. Conte com a qualidade e confiança das Baterias Cral para sua tranquilidade.</p>
@@ -235,7 +237,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Bateria Moura.jpeg" alt="Baterias Moura" id="baterias" width="100%"style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Bateria Moura.jpeg" alt="Baterias Moura" id="Baterias" width="100%"style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Baterias Moura (R$00,00)</h3>
         <p class="card-text">Maximize a performance do seu carro com as renomadas Baterias Moura. Desenvolvidas com tecnologia avançada, oferecem longa vida útil, excelente capacidade de partida e resistência a condições extremas. Escolha a confiabilidade das Baterias Moura e tenha total tranquilidade ao dirigir.</p>
@@ -246,7 +248,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Bateria heliar.jpeg" target="_blank" alt="Baterias Heliar" id="Baterias" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Bateria heliar.jpeg" target="_blank" alt="Baterias Heliar" id="bateria" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Baterias Heliar (R$00,00)</h3>
         <p class="card-text">Eleve o desempenho do seu veículo com as renomadas Baterias Heliar. Com tecnologia de ponta, longa vida útil e excelente capacidade de partida, essas baterias oferecem confiabilidade e resistência para enfrentar qualquer desafio. Escolha a qualidade e confiança das Baterias Heliar para garantir o melhor funcionamento do seu carro.</p>
@@ -259,7 +261,7 @@
   </div>
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Multimídia.jpeg" alt="Multimídia para carro" id="multimídia" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Multimídia.jpeg" alt="Multimídia para carro" id="multimídias" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Multimídia (R$00,00)</h3>
         <p class="card-text">Venda incrível sistema multimídia para carros, aprimore sua experiência automotiva com tela touchscreen, conectividade Bluetooth e recursos avançados de áudio. Desfrute de entretenimento e facilidades de conectividade em seu veículo com esta solução completa.</p>
@@ -270,7 +272,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Defletor.jpeg" alt="Defletor" id="defletor" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Defletor.jpeg" alt="Defletor" id="defletores" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Defletor (R$00,00)</h3>
         <p class="card-text">Aumente o conforto e reduza o ruído do vento ao dirigir com o Defletor de Carro. Este acessório aerodinâmico é fácil de instalar e ajuda a desviar o fluxo de ar, evitando turbulências dentro do veículo. Desfrute de uma viagem mais tranquila e agradável com o Defletor de Carro.</p>
@@ -281,7 +283,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Paletas1.0.jpeg" alt="Paletas" id="limpador" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Paletas1.0.jpeg" alt="Paletas" id="paletas" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Limpador de Para-Brisa (R$00,00)</h3>
         <p class="card-text">Mantenha sua visibilidade clara e segura com o Limpador de Para-Brisa de Carro. Com lâminas de alta qualidade e eficiência de limpeza, este acessório garante uma remoção eficaz de sujeiras, chuva e detritos do para-brisa. Tenha uma condução mais segura e sem obstruções com o Limpador de Para-Brisa de Carro.</p>
@@ -294,7 +296,7 @@
   </div>
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Retrovisor.jpeg" alt="Retrovisor para carro" id="retrovisor" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Retrovisor.jpeg" alt="Retrovisor para carro" id="retrovisores" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Retrovisor (R$00,00)</h3>
         <p class="card-text">Melhore sua visibilidade e segurança com o Retrovisor de Carro. Com design moderno e ajustável, oferece ampla cobertura de visão traseira para evitar pontos cegos. Tenha controle total do tráfego ao dirigir com o Retrovisor de Carro de alta qualidade.</p>
@@ -305,7 +307,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Extintor.jpeg" alt="Extintor" id="extintor" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Extintor.jpeg" alt="Extintor" id="extintores" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Extintor (R$00,00)</h3>
         <p class="card-text">Garanta a segurança do seu veículo com o Extintor de Carro. Compacto, fácil de usar e eficiente na prevenção e combate a incêndios. Esteja preparado para qualquer situação com o Extintor de Carro, indispensável para sua segurança e tranquilidade.</p>
@@ -316,7 +318,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Para-brisa.jpeg" alt="Para-Brisa" id="para-brisa" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Para-brisa.jpeg" alt="Para-Brisa" id="para-brisas" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Para-Brisa (R$00,00)</h3>
         <p class="card-text">Maximize a visibilidade e proteção com o Para-brisa de Carro. Feito com materiais de alta qualidade e resistência, oferece clareza óptica e durabilidade excepcionais. Desfrute de uma condução segura e sem obstruções com o Para-brisa de Carro de alta performance.</p>
@@ -340,7 +342,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/LanterRé.PNG" alt="Lanterna de Ré" id="lanterna" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/LanterRé.PNG" alt="Lanterna de Ré" id="lanternas" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Lanterna de Ré (R$00,00)</h3>
         <p class="card-text">Melhore a segurança ao dar marcha à ré com a lanterna de ré de carro. Potente e durável, oferece iluminação intensa para manobras seguras. Invista em visibilidade clara e confiável para uma condução tranquila.</p>
@@ -351,7 +353,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Farol4.0.jpeg" alt="Para-choque" id="Para-choque" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol4.0.jpeg" alt="Para-choque" id="Para-choques" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Para-Brisa (R$00,00)</h3>
         <p class="card-text">Proteja seu veículo contra colisões e impactos com o para-choque de carro. Fabricado com materiais de alta resistência, oferece uma defesa eficiente contra danos. Com design elegante e encaixe perfeito, proporciona uma aparência renovada e maior segurança ao dirigir.</p>
@@ -364,7 +366,7 @@
   </div>
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Farol1.0.PNG" alt="Retrovisor para carro" id="farol" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol1.0.PNG" alt="Retrovisor para carro" id="faróis" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Farol (R$00,00)</h3>
         <p class="card-text">Melhore a visibilidade e a segurança do seu veículo com os faróis de carro. Com tecnologia avançada, oferecem iluminação potente e clara em todas as condições. Tenha uma condução mais confiante e iluminada com esse item essencial para seu carro.</p>
@@ -375,7 +377,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/farol2.0.PNG" alt="Farol" id="farol" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol2.0.PNG" alt="Farol" id="farois" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Farol (R$00,00)</h3>
         <p class="card-text">Ilumine o caminho com os faróis de carro de alta qualidade. Proporcionam uma visibilidade clara e nítida, garantindo maior segurança durante a condução. Com design moderno e durabilidade, são perfeitos para melhorar a estética e a funcionalidade do seu veículo.</p>
@@ -399,7 +401,7 @@
   </div>
   <div class="card-group" style="margin: 15px;">
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Farol1.0.PNG" alt="Retrovisor para carro" id="farol" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol1.0.PNG" alt="Retrovisor para carro" id="faról" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Farol (R$00,00)</h3>
         <p class="card-text">Melhore a visibilidade e a segurança do seu veículo com os faróis de carro. Com tecnologia avançada, oferecem iluminação potente e clara em todas as condições. Tenha uma condução mais confiante e iluminada com esse item essencial para seu carro.</p>
@@ -410,7 +412,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/farol2.0.PNG" alt="Farol" id="farol" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol2.0.PNG" alt="Farol" id="farol" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Farol (R$00,00)</h3>
         <p class="card-text">Ilumine o caminho com os faróis de carro de alta qualidade. Proporcionam uma visibilidade clara e nítida, garantindo maior segurança durante a condução. Com design moderno e durabilidade, são perfeitos para melhorar a estética e a funcionalidade do seu veículo.</p>
@@ -421,7 +423,7 @@
       </div>
     </div>
     <div class="card" style="margin: 15px; border: 1px solid black;">
-      <img class="card-img-top" src="./Imagens/Farol3.0.PNG" alt="Farol" id="Farol" width="100%" style="object-fit: cover;">
+      <img class="card-img-top" src="./Imagens/Farol3.0.PNG" alt="Farol" id="Farois" width="100%" style="object-fit: cover;">
       <div class="card-body">
         <h3 class="card-title">Farol (R$00,00)</h3>
         <p class="card-text">Melhore a visibilidade e a segurança ao dirigir com os faróis de carro. Oferecendo iluminação clara e potente, garantem uma condução mais confiável durante a noite e em condições de baixa visibilidade. Com design moderno e durável, são a escolha perfeita para atualizar o sistema de iluminação do seu veículo.</p>
@@ -465,13 +467,13 @@
             <span class="visually-hidden">Button</span>
           </button>
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
-            <a href="https://bancariosfranca.com.br/" target="_blank"><img src="./Parceiros/sindicato2.0.png" alt="Ponteiras Rodrigues logo" width="120" height="90"></a>
+            <a href="https://bancariosfranca.com.br/" target="_blank"><img src="./Parceiros/Sindicato2.0.png" alt="Ponteiras Rodrigues logo" width="120" height="90"></a>
             <span class="visually-hidden">Button</span>
           </button>
         </div>
         <div class="btn-group" style="position: relative; margin-top: 20px;">
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
-            <a href="https://www.dunloppneus.com.br/"></a><img src="./Imagens/dunlop.jpg" alt="Dunlop" width="120" height="90">
+            <a href="https://www.dunloppneus.com.br/"></a><img src="./Imagens/Dunlop.jpg" alt="Dunlop" width="120" height="90">
             <span class="visually-hidden">Button</span>
           </button>
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
@@ -486,13 +488,13 @@
             <span class="visually-hidden">Button</span>
           </button>
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
-            <a href="https://phoenixacademia.com.br/#cronograma" target="_blank"><img src="./Parceiros/phoenix.webp" alt="Phoenix logo" width="120" height="90"></a>
+            <a href="https://phoenixacademia.com.br/#cronograma" target="_blank"><img src="./Parceiros/Phoenix.webp" alt="Phoenix logo" width="120" height="90"></a>
             <span class="visually-hidden">Button</span>
           </button>
         </div>
         <div class="btn-group" style="position: relative; margin-top: 20px;">
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
-            <a href="https://jahuautopecas.com.br/" target="_blank"><img src="./Parceiros/jahu.PNG" alt="Fuste logo" width="120" height="90"></a>
+            <a href="https://jahuautopecas.com.br/" target="_blank"><img src="./Parceiros/Jahu.PNG" alt="Fuste logo" width="120" height="90"></a>
             <span class="visually-hidden">Button</span>
           </button>
           <button type="button" class="btn btn-outline-secondary" style="padding: 1px; margin: 2px;">
