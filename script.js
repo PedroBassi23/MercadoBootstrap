@@ -17,7 +17,11 @@
           "retrovisores",
           "lona marítma",
           "alinhamento",
-          "para-choques"
+          "para-choques",
+          "borrachas",
+          "calotas",
+          "tapetes",
+          "extintores"
         ];
     
         const suggestionsList = document.getElementById("suggestionsList");
