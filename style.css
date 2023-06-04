@@ -1,13 +1,217 @@
+.navbar {
+  position: relative;
+  z-index: 2;
+}
 
+.navbar .navbar-nav .nav-item {
+  margin-right: 7px;
+  margin-left: 10px;
+  height: 47px;
+  margin-bottom: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: rgb(223, 223, 21);
+  border: 1px solid black;
+  padding: 8px;
+  box-shadow: 1px 1px 1px black;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #343a40;
+}
+
+.services-card {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.services-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-card li {
+  margin-bottom: 10px;
+}
+
+.services-card a {
+  display: block;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.services-card a:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.search-bar {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.search-input {
+  border-radius: 0;
+  background-color: white;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: transparent;
+  border-top: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #ffffff;
+}
+
+/* Estilos personalizados para o navbar */
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 7px;
+  margin-left: 10px;
+  height: 47px;
+  margin-bottom: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: rgb(223, 223, 21);
+  border: 1px solid black;
+  padding: 8px;
+  box-shadow: 1px 1px 1px black;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #343a40;
+}
+
+.navbar .search-bar {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar .search-input {
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px black;
+}
+
+.navbar .btn-outline-primary {
+  color: rgb(223, 223, 21);
+  border-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px black;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #343a40;
+  color: rgb(223, 223, 21);
+}
+
+
+
+
+
+.suggestions-list {
+  /* Estilos adicionais */
+  padding: 0;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions-list li {
+  /* Estilos adicionais */
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestions-list li:last-child {
+  /* Estilo adicional para remover a borda inferior do último item */
+  border-bottom: none;
+}
+.suggestions-list li a {
+  /* Estilos adicionais */
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 div.carousel-inner {
   /* width: 100px;
-  height: 400px; */
+  height: 400px; 
 }
+*/
 
 .carousel-images {
   object-fit: cover;
-  height: 900px;
+  height: 700px;
 }
+
 
 
 
@@ -135,7 +339,7 @@ li.nav-item:hover {
   position: fixed;
   right:0px; 
   bottom: 5px; 
-  z-index: 10000;
+  z-index: 1000;
   width:150px;
   height:150px;
   transition: 0.5s;
@@ -144,7 +348,7 @@ li.nav-item:hover {
   position: fixed;
   right:0px; 
   bottom: 5px; 
-  z-index: 10000;
+  z-index: 1000;
   width:170px;
   height:170px;
 }
@@ -160,3 +364,17 @@ li.nav-item:hover {
   transform: scale(1.5);
   transition: 0.5;
 }
+
+
+
+@media (max-width: 1300px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+
+
+
+
