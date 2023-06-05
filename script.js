@@ -9,7 +9,7 @@
           "multimídias",
           "faróis",
           "lanternas",
-          "paletas",
+          "palhetas",
           "defletores",
           "para-brisas",
           "engates",
@@ -21,7 +21,8 @@
           "borrachas",
           "calotas",
           "tapetes",
-          "extintores"
+          "extintores",
+          "produtos"
         ];
     
         const suggestionsList = document.getElementById("suggestionsList");
