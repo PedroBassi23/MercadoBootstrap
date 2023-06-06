@@ -44,6 +44,7 @@
       function showServices() {
         const servicesCard = document.getElementById("servicesCard");
         servicesCard.style.display = "block";
+        servicesCard.classList.add("show");
       }
       
       function hideServices() {
@@ -51,6 +52,7 @@
         const isHovered = isMouseOver(servicesCard);
         if (!isHovered) {
           servicesCard.style.display = "none";
+          servicesCard.classList.remove("show");
         }
       }
       
