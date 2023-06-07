@@ -394,6 +394,22 @@ li.nav-item:hover {
   }
 }
 
-
-
-
+@media (max-width: 700px){
+.wa {
+  position: fixed;
+  right:0px; 
+  bottom: 5px; 
+  z-index: 100000;
+  width:90px;
+  height:90px;
+  transition: 0.5s;
+}
+.wa:hover {
+  position: fixed;
+  right:0px; 
+  bottom: 5px; 
+  z-index: 100000;
+  width:110px;
+  height:110px;
+}
+}
