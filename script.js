@@ -22,7 +22,9 @@
           "calotas",
           "tapetes",
           "extintores",
-          "produtos"
+          "produtos",
+          "trava automática",
+          ""
         ];
     
         const suggestionsList = document.getElementById("suggestionsList");
