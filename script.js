@@ -23,8 +23,12 @@
           "tapetes",
           "extintores",
           "produtos",
-          "trava automática",
-          ""
+          "controle",
+          "borrachas de porta",
+          "capa de pneu",
+          "pneu",
+          "defletor",
+          "lona",
         ];
     
         const suggestionsList = document.getElementById("suggestionsList");
